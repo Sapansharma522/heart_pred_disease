@@ -1,0 +1,47 @@
+<html>
+<style>
+  .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid blue;
+        border-radius: 5px;
+        font-size: 100px;
+        cursor: pointer;
+
+
+    }
+
+    .btn:hover {
+        text-decoration: underline;
+        color:chartreuse;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+      a:hover{
+          color: yellow;
+      }
+</style>
+<body bgcolor= #a3cfb4>
+
+    <center>
+        <h1> PREDICTION: </h1>
+
+    {%if data==0%}
+    <h1> You're Healthy!! </h1>
+
+    {%else%}
+    <h1> You're Suffering From {{disease}} </h1>
+    
+    {%endif%}
+      <br><br>
+      <h2>
+    <a href='/'> Go Back To Home Page </a>
+</h2>
+    </center>
+</body>
+</html> 
